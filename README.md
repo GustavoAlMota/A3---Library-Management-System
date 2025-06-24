@@ -41,34 +41,17 @@ To access the admin panel:
 
 ### 2. Database Setup
 
-1. Open **XAMPP** and **start Apache and MySQL**.
-2. Open **phpMyAdmin** via your browser (http://localhost/phpmyadmin).
+1. Open **XAMPP** and start **Apache** and **MySQL**.
+2. Open **phpMyAdmin** in your browser (`http://localhost/phpmyadmin`).
 3. Create a new database (e.g., `library_db`).
-4. Import the provided `.sql` file located in the project folder to create the necessary tables and initial data.
+4. Import the provided `.sql` file located in the project folder to create the necessary tables and data.
 
 ### 3. Project Configuration
 
 1. Open the project in **NetBeans**.
 2. Make sure the JDBC connection settings (URL, user, password) match your MySQL configuration.
-   - Example connection string in your code:
-     ```java
-     String url = "jdbc:mysql://localhost:3306/library_db";
-     String user = "root";
-     String password = "";
-     ```
-3. Clean and build the project.
-4. Run the application.
-
----
-
-## 📝 Notes
-
-- This system is intended for academic use and is kept simple for learning purposes.
-- Error handling and advanced validation may be limited.
-
----
-
-## 👨‍🎓 Author
-
-This project was developed as part of a final assignment for the [Name of Course or Professor if you'd like to include].
-
+   Example:
+   ```java
+   String url = "jdbc:mysql://localhost:3306/library_db";
+   String user = "root";
+   String password = "";
